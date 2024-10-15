@@ -68,7 +68,7 @@ test_get_post: Tests fetching a single post by its ID.
 test_get_user: Tests fetching a user by their ID.  
 -> Running Tests  
 To run the tests, use the following command:  
-pytest
-OR
-pytest -W ignore::DeprecationWarning 
+pytest  
+OR  
+pytest -W ignore::DeprecationWarning   
 
