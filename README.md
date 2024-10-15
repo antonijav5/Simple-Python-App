@@ -43,10 +43,10 @@ The querying mechanism has been designed to be highly reusable and extensible. A
 This design allows the querying logic to be extended easily by adding new models or relationships without the need to rewrite or modify existing code.  
 
 # Setup and Installation  
-Clone the repository:
--> git clone <repository-url>
--> cd <project-directory>
-Install dependencies:
--> pip install -r requirements.txt
-Run the server:
--> uvicorn app.main:app --reload
+Clone the repository:  
+-> git clone <repository-url>  
+-> cd <project-directory>  
+Install dependencies:  
+-> pip install -r requirements.txt  
+Run the server:  
+-> uvicorn app.main:app --reload  
