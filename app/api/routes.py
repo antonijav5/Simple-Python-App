@@ -22,13 +22,10 @@ async def generic_query(
     single: bool = False,
 ):
     query = select(model)
-
-    # Apply filters
     if filters:
         for key, value in filters.items():
             query = query.filter(getattr(model, key) == value)
-
-    # Apply includes
+            
     if includes:
         for include in includes:
             if include == "tags" and hasattr(model, "tags"):
