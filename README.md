@@ -62,7 +62,8 @@ This project includes unit tests for the FastAPI application using pytest. The t
 -> Test Structure  
 test_app: A fixture that sets up a FastAPI test client for making requests to the application during testing.  
 db_session: A fixture that manages the database session. It drops all tables, creates new ones, and populates the database with sample data before running the tests.  
-Tests: There are multiple test functions to verify the correctness of the API endpoints:  
+-> Tests  
+There are multiple test functions to verify the correctness of the API endpoints:  
 test_get_posts: Tests fetching posts with a specific status.  
 test_get_post: Tests fetching a single post by its ID.  
 test_get_user: Tests fetching a user by their ID.  
