@@ -3,6 +3,12 @@ Data Querying Mechanism with FastAPI, Pydantic, and SQLAlchemy
 
 This project implements a FastAPI-based backend with models for posts, comments, tags, and users, alongside several reusable and extendable API endpoints.
 
+## Features
+
+- Create, retrieve, and manage users, posts, comments, and tags.
+- Populate the database with sample data for testing.
+- Implemented unit tests using `pytest` to ensure the functionality of the API endpoints.
+
 # Models and Relationships
 1. Post
   Belongs to a User  
@@ -50,3 +56,19 @@ Install dependencies:
 -> pip install -r requirements.txt  
 Run the server:  
 -> uvicorn app.main:app --reload  
+
+# Testing  
+This project includes unit tests for the FastAPI application using pytest. The tests are located in the tests directory.  
+-> Test Structure  
+test_app: A fixture that sets up a FastAPI test client for making requests to the application during testing.  
+db_session: A fixture that manages the database session. It drops all tables, creates new ones, and populates the database with sample data before running the tests.  
+Tests: There are multiple test functions to verify the correctness of the API endpoints:  
+test_get_posts: Tests fetching posts with a specific status.  
+test_get_post: Tests fetching a single post by its ID.  
+test_get_user: Tests fetching a user by their ID.  
+-> Running Tests  
+To run the tests, use the following command:  
+pytest
+OR
+pytest -W ignore::DeprecationWarning 
+
