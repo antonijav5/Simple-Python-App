@@ -44,8 +44,8 @@ This design allows the querying logic to be extended easily by adding new models
 
 # Setup and Installation  
 Clone the repository:  
--> git clone <repository-url>  
--> cd <project-directory>  
+-> git clone [<repository-url>  ](https://github.com/antonijav5/Simple-Python-App.git)
+-> relocate to Simple-Python-App folder 
 Install dependencies:  
 -> pip install -r requirements.txt  
 Run the server:  
