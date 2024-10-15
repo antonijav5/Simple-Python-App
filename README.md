@@ -39,8 +39,8 @@ GET /api/users/{id}?include=posts,comments
 -> Retrieve a specific user by their ID.  
 -> Include related posts and comments in the response.  
 
-Reusability and Extensibility
-The querying mechanism has been designed to be highly reusable and extensible. A generic query function, generic_query(), has been implemented to allow the flexible filtering and inclusion of related data for any model.
+-> Reusability and Extensibility  
+The querying mechanism has been designed to be highly reusable and extensible. A generic query function, **generic_query()**, has been implemented to allow the flexible filtering and inclusion of related data for any model.
 
 # Key features for reusability:  
 -> Filters: You can dynamically apply filters to the query based on model attributes. For example, filtering posts by status.  
